@@ -1,0 +1,54 @@
+{
+  "configVersion": "v3",
+  "app": {
+    "appId": 29304,
+    "appName": "Domino Score",
+    "appType": "app",
+    "version": {
+      "code": 1,
+      "name": "1.0.0"
+    },
+    "icon": "dominoes_app_icon.png",
+    "vender": "WillDeJs",
+    "description": "Application to keep scores initially designed for dominoes but can be used for more."
+  },
+  "permissions": ["device:os.local_storage", "data:os.device.info"],
+  "runtime": {
+    "apiVersion": {
+      "compatible": "3.0.0",
+      "target": "3.0.0",
+      "minVersion": "3.0"
+    }
+  },
+  "targets": {
+    "default": {
+      "module": {
+        "page": {
+          "pages": [
+            "page/index"
+          ]
+        }
+      },
+      "platforms": [
+        {
+          "st": "r",
+          "dw": 480
+        },
+        {
+          "st": "s",
+          "dw": 390
+        },
+        {
+          "st": "b",
+          "dw": 194
+        }
+      ]
+    }
+  },
+  "i18n": {
+    "en-US": {
+      "appName": "Empty"
+    }
+  },
+  "defaultLanguage": "en-US"
+}
