@@ -121,8 +121,8 @@ Page({
     // Buttons and their functions
     createWidget(widget.BUTTON, {
       ...ADD_FIVE_BUTTON,
-      x: 100,
-      y: DEVICE_WIDTH / 2 - 50,
+      x: 30,
+      y: DEVICE_WIDTH / 2 - 110,
       click_func: () => {
         updateScore(5, selectedScore);
       },
@@ -130,8 +130,8 @@ Page({
 
     createWidget(widget.BUTTON, {
       ...ADD_TEN_BUTTON,
-      x: 150,
-      y: DEVICE_WIDTH / 2 - 50,
+      x: 100,
+      y: DEVICE_WIDTH / 2 - 110,
       click_func: () => {
         updateScore(10, selectedScore);
       },
@@ -139,8 +139,8 @@ Page({
 
     createWidget(widget.BUTTON, {
       ...MINUS_FIVE_BUTTON,
-      x: 100,
-      y: DEVICE_WIDTH / 2 + 10,
+      x: 30,
+      y: DEVICE_WIDTH / 2,
       click_func: () => {
         updateScore(-5, selectedScore);
       },
@@ -148,8 +148,8 @@ Page({
 
     createWidget(widget.BUTTON, {
       ...MINUS_TEN_BUTTON,
-      x: 150,
-      y: DEVICE_WIDTH / 2 + 10,
+      x: 100,
+      y: DEVICE_WIDTH / 2,
       click_func: () => {
         updateScore(-10, selectedScore);
       },
@@ -157,7 +157,7 @@ Page({
 
     createWidget(widget.BUTTON, {
       ...RESET_BUTTON,
-      x: 100,
+      x: 30,
       y: DEVICE_WIDTH / 2 + 80,
       click_func: () => {
         if (selectedScore < 0) {

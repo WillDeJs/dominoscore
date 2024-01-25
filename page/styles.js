@@ -12,46 +12,51 @@ export const SCORE_VIEW = {
 
 export const ADD_FIVE_BUTTON = {
   text: "+5",
-  radius: px(20),
+  radius: px(40),
   press_color: 0x00a0a0,
   normal_color: 0x00c00c,
-  w: px(40),
-  h: px(40),
+  text_size: 30,
+  w: px(60),
+  h: px(60),
 };
 
 export const ADD_TEN_BUTTON = {
   text: "+10",
-  radius: px(20),
+  radius: px(40),
   press_color: 0x00a0a0,
   normal_color: 0x00c000,
-  w: px(40),
-  h: px(40),
+  text_size: 30,
+  w: px(60),
+  h: px(60),
 };
 
 export const MINUS_FIVE_BUTTON = {
   text: "-5",
-  radius: px(20),
+  radius: px(40),
   press_color: 0x800000,
   normal_color: 0xc00000,
-  w: px(40),
-  h: px(40),
+  text_size: 30,
+  w: px(60),
+  h: px(60),
 };
 
 export const MINUS_TEN_BUTTON = {
   text: "-10",
-  radius: px(20),
+  text_size: 30,
+  radius: px(40),
   press_color: 0x800000,
   normal_color: 0xc00000,
-  w: px(40),
-  h: px(40),
+  w: px(60),
+  h: px(60),
 };
 
 export const RESET_BUTTON = {
   text: "Reset",
   press_color: 0xb179d7,
+  text_size: 30,
   normal_color: 0xac4f95,
   radius: px(10),
-  w: px(90),
+  w: px(120),
   h: px(40),
 };
 
@@ -85,8 +90,9 @@ export const PLAYER_FOUR_RECT = {
 };
 
 export const SELECTED_PLAYER = {
-  x: 100,
+  x: 80,
   y: DEVICE_WIDTH / 2 + 120,
   w: px(90),
+  text_size: 30,
   text: "Tap Player",
 };

@@ -2,7 +2,7 @@
   "configVersion": "v2",
   "app": {
     "appId": 23861,
-    "appName": "Empty",
+    "appName": "DomiScore",
     "appType": "app",
     "version": {
       "code": 1,
@@ -48,7 +48,7 @@
   },
   "i18n": {
     "en-US": {
-      "appName": "Empty"
+      "appName": "DomiScore"
     }
   },
   "defaultLanguage": "en-US"
