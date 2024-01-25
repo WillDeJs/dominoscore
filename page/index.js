@@ -52,6 +52,7 @@ Page({
       x: DEVICE_WIDTH / 2,
       y: DEVICE_WIDTH / 4 - 80,
       color: 0xffffff,
+      h: 35,
       text_size: px(30),
       text: "A: " + scores[0].toString(),
     });
@@ -61,6 +62,7 @@ Page({
       y: (DEVICE_WIDTH / 4) * 2 - 80,
       color: 0xffffff,
       text_size: px(30),
+      h: 35,
       text: "B: " + scores[1].toString(),
     });
 
@@ -71,6 +73,7 @@ Page({
       y: (DEVICE_WIDTH / 4) * 3 - 80,
       color: 0xffffff,
       text_size: px(30),
+      h: 35,
       text: "C: " + scores[2].toString(),
     });
 
@@ -79,6 +82,7 @@ Page({
       x: DEVICE_WIDTH / 2,
       y: (DEVICE_WIDTH / 4) * 4 - 80,
       color: 0xffffff,
+      h: 35,
       text_size: px(30),
       text: "D: " + scores[2].toString(),
     });

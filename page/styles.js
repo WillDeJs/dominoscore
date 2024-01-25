@@ -6,6 +6,8 @@ export const { width: DEVICE_WIDTH, height: DEVICE_HEIGHT } = getDeviceInfo();
 
 export const SCORE_VIEW = {
   w: px(DEVICE_WIDTH),
+  text_style: hmUI.text_style.ELLIPSIS,
+  align_v: hmUI.align.CENTER_V,
 };
 
 export const ADD_FIVE_BUTTON = {

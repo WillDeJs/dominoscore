@@ -1,27 +1,31 @@
 {
-  "configVersion": "v3",
+  "configVersion": "v2",
   "app": {
-    "appId": 1045585,
-    "appName": "DomiScore",
+    "appId": 23861,
+    "appName": "Empty",
     "appType": "app",
     "version": {
       "code": 1,
-      "name": "0.1.0"
+      "name": "1.0.0"
     },
-    "icon": "dominoes_app_icon.png",
-    "vender": "WillDeJs",
-    "description": "Application to keep scores initially designed for dominoes but can be used for more."
+    "icon": "icon.png",
+    "vender": "zepp",
+    "description": "empty application"
   },
-  "permissions": ["device:os.local_storage", "data:os.device.info"],
+  "permissions": [
+    "data:os.device.info",
+    "device:os.local_storage",
+    "data:user.hd.calorie"
+  ],
   "runtime": {
     "apiVersion": {
-      "compatible": "3.0.0",
-      "target": "3.0.0",
-      "minVersion": "3.0"
+      "compatible": "2.0.0",
+      "target": "2.0.0",
+      "minVersion": "2.0.0"
     }
   },
   "targets": {
-    "default": {
+    "466x466-amazfit-gtr-4": {
       "module": {
         "page": {
           "pages": [
@@ -31,23 +35,20 @@
       },
       "platforms": [
         {
-          "st": "r",
-          "dw": 480
+          "name": "Berlin",
+          "deviceSource": 7930112
         },
         {
-          "st": "s",
-          "dw": 390
-        },
-        {
-          "st": "b",
-          "dw": 194
+          "name": "BerlinW",
+          "deviceSource": 7930113
         }
-      ]
+      ],
+      "designWidth": 466
     }
   },
   "i18n": {
     "en-US": {
-      "appName": "DomiScore"
+      "appName": "Empty"
     }
   },
   "defaultLanguage": "en-US"
