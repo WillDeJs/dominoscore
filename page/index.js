@@ -14,6 +14,7 @@ import {
   PLAYER_THREE_RECT,
   PLAYER_FOUR_RECT,
   RESET_BUTTON,
+  SELECTED_PLAYER,
 } from "./styles.js";
 
 import { getSettings } from "@zos/display";
@@ -25,6 +26,7 @@ localStorage = new LocalStorage();
 
 Page({
   build() {
+    selected_player = createWidget(widget.TEXT, SELECTED_PLAYER);
     // Player rectangles
     rect_one = createWidget(widget.FILL_RECT, PLAYER_ONE_RECT);
     rect_two = createWidget(widget.FILL_RECT, PLAYER_TWO_RECT);
@@ -37,6 +39,9 @@ Page({
       rectangles[i].addEventListener(event.CLICK_UP, (info) => {
         console.log(info);
         selectedScore = i;
+        selected_player.setProperty(hmUI.prop.MORE, {
+          text: "EDIT: [ " + players[selectedScore][0] + " ]",
+        });
         console.log("Changing selection to: " + i);
       });
     }
@@ -89,6 +94,9 @@ Page({
     for (let i = 0; i < player_displays.length; i++) {
       player_displays[i].addEventListener(event.CLICK_UP, (info) => {
         selectedScore = i;
+        selected_player.setProperty(hmUI.prop.MORE, {
+          text: "EDIT: [ " + players[selectedScore][0] + " ]",
+        });
       });
     }
     updateScore = (value, scorer) => {

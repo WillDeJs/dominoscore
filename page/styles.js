@@ -81,3 +81,10 @@ export const PLAYER_FOUR_RECT = {
   h: px(DEVICE_WIDTH / 4),
   color: 0xebda01,
 };
+
+export const SELECTED_PLAYER = {
+  x: 100,
+  y: DEVICE_WIDTH / 2 + 120,
+  w: px(90),
+  text: "Tap Player",
+};
